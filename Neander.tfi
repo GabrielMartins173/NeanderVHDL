@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+Neander instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .seletorUAL(seletorUAL), 
+    .cargaNZ(cargaNZ), 
+    .cargaRI(cargaRI), 
+    .cargaAC(cargaAC), 
+    .cargaREM(cargaREM), 
+    .readMemoria(readMemoria), 
+    .writeMemoria(writeMemoria), 
+    .cargaRDM(cargaRDM)
+    );
+
+

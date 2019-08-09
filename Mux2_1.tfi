@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Mux2_1 instance_name (
+    .seletorMux(seletorMux), 
+    .entrada1MUX(entrada1MUX), 
+    .entrada2MUX(entrada2MUX), 
+    .saidaMux(saidaMux)
+    );
+
+

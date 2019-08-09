@@ -1,0 +1,690 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.59 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.59 secs
+ 
+--> Reading design: Neander.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Neander.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Neander"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Neander
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Neander_Gabriel_Martins/Mux2_1.vhd" in Library work.
+Architecture behavioral of Entity mux2_1 is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/Mux3_1.vhd" in Library work.
+Architecture behavioral of Entity mux3_1 is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/REMem.vhd" in Library work.
+Architecture behavioral of Entity remem is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/RDM.vhd" in Library work.
+Architecture behavioral of Entity rdm is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/AC.vhd" in Library work.
+Architecture behavioral of Entity ac is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/RI.vhd" in Library work.
+Architecture behavioral of Entity ri is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/Decoder.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/NZ.vhd" in Library work.
+Architecture behavioral of Entity nz is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/ULA.vhd" in Library work.
+Architecture behavioral of Entity ula is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/UnidadeControle.vhd" in Library work.
+Architecture behavioral of Entity unidadecontrole is up to date.
+Compiling vhdl file "C:/Neander_Gabriel_Martins/Neander.vhd" in Library work.
+Entity <neander> compiled.
+Entity <neander> (Architecture <behavioral>) compiled.
+Compiling verilog file "ipcore_dir/memprog1.v" in library work
+Module <memprog1> compiled
+No errors in compilation
+Analysis of file <"Neander.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Neander> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux3_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REMem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RDM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RI> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <NZ> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ULA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UnidadeControle> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Neander> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Neander_Gabriel_Martins/Neander.vhd" line 322: Instantiating black box module <memprog1>.
+Entity <Neander> analyzed. Unit <Neander> generated.
+
+Analyzing Entity <Mux2_1> in library <work> (Architecture <behavioral>).
+Entity <Mux2_1> analyzed. Unit <Mux2_1> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <Mux3_1> in library <work> (Architecture <behavioral>).
+Entity <Mux3_1> analyzed. Unit <Mux3_1> generated.
+
+Analyzing Entity <REMem> in library <work> (Architecture <behavioral>).
+Entity <REMem> analyzed. Unit <REMem> generated.
+
+Analyzing Entity <RDM> in library <work> (Architecture <behavioral>).
+Entity <RDM> analyzed. Unit <RDM> generated.
+
+Analyzing Entity <AC> in library <work> (Architecture <behavioral>).
+Entity <AC> analyzed. Unit <AC> generated.
+
+Analyzing Entity <RI> in library <work> (Architecture <behavioral>).
+Entity <RI> analyzed. Unit <RI> generated.
+
+Analyzing Entity <Decoder> in library <work> (Architecture <behavioral>).
+Entity <Decoder> analyzed. Unit <Decoder> generated.
+
+Analyzing Entity <NZ> in library <work> (Architecture <behavioral>).
+Entity <NZ> analyzed. Unit <NZ> generated.
+
+Analyzing Entity <ULA> in library <work> (Architecture <behavioral>).
+Entity <ULA> analyzed. Unit <ULA> generated.
+
+Analyzing Entity <UnidadeControle> in library <work> (Architecture <behavioral>).
+Entity <UnidadeControle> analyzed. Unit <UnidadeControle> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Mux2_1>.
+    Related source file is "C:/Neander_Gabriel_Martins/Mux2_1.vhd".
+Unit <Mux2_1> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Neander_Gabriel_Martins/PC.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 8-bit up counter for signal <dado>.
+    Found 1-bit register for signal <incAnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <Mux3_1>.
+    Related source file is "C:/Neander_Gabriel_Martins/Mux3_1.vhd".
+Unit <Mux3_1> synthesized.
+
+
+Synthesizing Unit <REMem>.
+    Related source file is "C:/Neander_Gabriel_Martins/REMem.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 8-bit register for signal <entrada>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <REMem> synthesized.
+
+
+Synthesizing Unit <RDM>.
+    Related source file is "C:/Neander_Gabriel_Martins/RDM.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 8-bit register for signal <entrada>.
+    Found 1-bit register for signal <RDant>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <RDM> synthesized.
+
+
+Synthesizing Unit <AC>.
+    Related source file is "C:/Neander_Gabriel_Martins/AC.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 8-bit register for signal <entrada>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <AC> synthesized.
+
+
+Synthesizing Unit <RI>.
+    Related source file is "C:/Neander_Gabriel_Martins/RI.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 8-bit register for signal <entrada>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <RI> synthesized.
+
+
+Synthesizing Unit <Decoder>.
+    Related source file is "C:/Neander_Gabriel_Martins/Decoder.vhd".
+    Found 1-of-16 decoder for signal <instrucao>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <Decoder> synthesized.
+
+
+Synthesizing Unit <NZ>.
+    Related source file is "C:/Neander_Gabriel_Martins/NZ.vhd".
+    Found 1-bit register for signal <cargaAnt>.
+    Found 2-bit register for signal <dado>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <NZ> synthesized.
+
+
+Synthesizing Unit <ULA>.
+    Related source file is "C:/Neander_Gabriel_Martins/ULA.vhd".
+    Found 8x8-bit multiplier for signal <mult>.
+    Found 8-bit addsub for signal <operacao$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <ULA> synthesized.
+
+
+Synthesizing Unit <UnidadeControle>.
+    Related source file is "C:/Neander_Gabriel_Martins/UnidadeControle.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 48                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 9                                              |
+    | Clock              | clkDiv                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <clkDiv>.
+    Found 32-bit up counter for signal <cont>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <UnidadeControle> synthesized.
+
+
+Synthesizing Unit <Neander>.
+    Related source file is "C:/Neander_Gabriel_Martins/Neander.vhd".
+WARNING:Xst:646 - Signal <opcode<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Neander> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 14
+ 1-bit register                                        : 9
+ 2-bit register                                        : 1
+ 8-bit register                                        : 4
+# Decoders                                             : 1
+ 1-of-16 decoder                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Instancia_11/state/FSM> on signal <state[1:4]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2    | 0011
+ s3    | 0010
+ s4    | 0110
+ s5    | 0111
+ s6    | 0101
+ s7    | 0100
+ s8    | 1100
+-------------------
+Reading core <ipcore_dir/memprog1.ngc>.
+Loading core <memprog1> for timing and area information for instance <Instancia_12>.
+WARNING:Xst:2677 - Node <entrada_0> of sequential type is unconnected in block <Instancia_7>.
+WARNING:Xst:2677 - Node <entrada_1> of sequential type is unconnected in block <Instancia_7>.
+WARNING:Xst:2677 - Node <entrada_2> of sequential type is unconnected in block <Instancia_7>.
+WARNING:Xst:2677 - Node <entrada_3> of sequential type is unconnected in block <Instancia_7>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Decoders                                             : 1
+ 1-of-16 decoder                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Neander> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <REMem> ...
+
+Optimizing unit <RDM> ...
+
+Optimizing unit <AC> ...
+
+Optimizing unit <RI> ...
+
+Optimizing unit <ULA> ...
+
+Optimizing unit <UnidadeControle> ...
+WARNING:Xst:2677 - Node <Instancia_7/entrada_3> of sequential type is unconnected in block <Neander>.
+WARNING:Xst:2677 - Node <Instancia_7/entrada_2> of sequential type is unconnected in block <Neander>.
+WARNING:Xst:2677 - Node <Instancia_7/entrada_1> of sequential type is unconnected in block <Neander>.
+WARNING:Xst:2677 - Node <Instancia_7/entrada_0> of sequential type is unconnected in block <Neander>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Neander, actual ratio is 13.
+FlipFlop Instancia_7/entrada_4 has been replicated 1 time(s)
+FlipFlop Instancia_7/entrada_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 85
+ Flip-Flops                                            : 85
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Neander.ngr
+Top Level Output File Name         : Neander
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 346
+#      GND                         : 2
+#      INV                         : 11
+#      LUT1                        : 38
+#      LUT2                        : 19
+#      LUT3                        : 41
+#      LUT3_L                      : 7
+#      LUT4                        : 73
+#      LUT4_D                      : 10
+#      LUT4_L                      : 3
+#      MUXCY                       : 53
+#      MUXF5                       : 31
+#      MUXF6                       : 8
+#      VCC                         : 2
+#      XORCY                       : 48
+# FlipFlops/Latches                : 85
+#      FDC                         : 4
+#      FDCE                        : 40
+#      FDE                         : 8
+#      FDR                         : 33
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 1
+#      OBUF                        : 9
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      105  out of    960    10%  
+ Number of Slice Flip Flops:             85  out of   1920     4%  
+ Number of 4 input LUTs:                202  out of   1920    10%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     83    13%  
+ Number of BRAMs:                         1  out of      4    25%  
+ Number of MULT18X18SIOs:                 1  out of      4    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+clk                                | BUFGP                            | 82    |
+Instancia_11/clkDiv                | NONE(Instancia_11/state_FSM_FFd4)| 4     |
+-----------------------------------+----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 44    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.707ns (Maximum Frequency: 93.393MHz)
+   Minimum input arrival time before clock: 3.788ns
+   Maximum output required time after clock: 7.612ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.707ns (frequency: 93.393MHz)
+  Total number of paths / destination ports: 11346 / 186
+-------------------------------------------------------------------------
+Delay:               10.707ns (Levels of Logic = 14)
+  Source:            Instancia_7/entrada_7 (FF)
+  Destination:       Instancia_9/dado_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Instancia_7/entrada_7 to Instancia_9/dado_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.514   0.925  Instancia_7/entrada_7 (Instancia_7/entrada_7)
+     LUT4:I3->O            1   0.612   0.360  Instancia_11/selULA<0>241_SW1 (N114)
+     LUT4_D:I3->O          3   0.612   0.454  Instancia_11/selULA<0>241 (Instancia_11/N27)
+     LUT4:I3->O           22   0.612   1.019  Instancia_11/selULA<1>18 (selULA<1>)
+     LUT4:I2->O            1   0.612   0.000  Instancia_10/Maddsub_operacao_addsub0000_lut<1> (Instancia_10/Maddsub_operacao_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  Instancia_10/Maddsub_operacao_addsub0000_cy<1> (Instancia_10/Maddsub_operacao_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Instancia_10/Maddsub_operacao_addsub0000_cy<2> (Instancia_10/Maddsub_operacao_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Instancia_10/Maddsub_operacao_addsub0000_cy<3> (Instancia_10/Maddsub_operacao_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Instancia_10/Maddsub_operacao_addsub0000_cy<4> (Instancia_10/Maddsub_operacao_addsub0000_cy<4>)
+     XORCY:CI->O           2   0.699   0.410  Instancia_10/Maddsub_operacao_addsub0000_xor<5> (Instancia_10/operacao_addsub0000<5>)
+     LUT3:I2->O            1   0.612   0.000  Instancia_10/operacao<5>2 (Instancia_10/operacao<5>1)
+     MUXF5:I0->O           1   0.278   0.000  Instancia_10/operacao<5>_f5 (Instancia_10/operacao<5>_f5)
+     MUXF6:I1->O           2   0.451   0.383  Instancia_10/operacao<5>_f6 (saidaULA<5>)
+     LUT4_L:I3->LO         1   0.612   0.103  Instancia_10/NZ_0_cmp_eq000028_SW0 (N73)
+     LUT4:I3->O            1   0.612   0.000  Instancia_10/NZ_0_cmp_eq000028 (entradaNZ<0>)
+     FDCE:D                    0.268          Instancia_9/dado_0
+    ----------------------------------------
+    Total                     10.707ns (7.052ns logic, 3.655ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Instancia_11/clkDiv'
+  Clock period: 4.148ns (frequency: 241.097MHz)
+  Total number of paths / destination ports: 17 / 4
+-------------------------------------------------------------------------
+Delay:               4.148ns (Levels of Logic = 2)
+  Source:            Instancia_11/state_FSM_FFd4 (FF)
+  Destination:       Instancia_11/state_FSM_FFd1 (FF)
+  Source Clock:      Instancia_11/clkDiv rising
+  Destination Clock: Instancia_11/clkDiv rising
+
+  Data Path: Instancia_11/state_FSM_FFd4 to Instancia_11/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             16   0.514   1.031  Instancia_11/state_FSM_FFd4 (Instancia_11/state_FSM_FFd4)
+     LUT4:I0->O           21   0.612   1.111  Instancia_11/state_FSM_FFd1-In11 (Instancia_11/state_cmp_eq0017)
+     LUT2:I0->O            2   0.612   0.000  Instancia_11/selRDM1 (seletorMux2)
+     FDC:D                     0.268          Instancia_11/state_FSM_FFd1
+    ----------------------------------------
+    Total                      4.148ns (2.006ns logic, 2.142ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.788ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       Instancia_2/incAnt (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to Instancia_2/incAnt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   1.106   1.230  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            1   0.612   0.357  Instancia_2/incAnt_and00001 (Instancia_2/incAnt_and0000)
+     FDE:CE                    0.483          Instancia_2/incAnt
+    ----------------------------------------
+    Total                      3.788ns (2.201ns logic, 1.587ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 15 / 9
+-------------------------------------------------------------------------
+Offset:              7.612ns (Levels of Logic = 4)
+  Source:            Instancia_7/entrada_4 (FF)
+  Destination:       halt (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Instancia_7/entrada_4 to halt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            15   0.514   1.016  Instancia_7/entrada_4 (Instancia_7/entrada_4)
+     LUT4:I0->O            1   0.612   0.360  Instancia_11/halt44_SW0_SW0 (N160)
+     LUT4:I3->O            1   0.612   0.360  Instancia_11/halt44_SW0 (N156)
+     LUT4:I3->O            1   0.612   0.357  Instancia_11/halt44 (halt_OBUF)
+     OBUF:I->O                 3.169          halt_OBUF (halt)
+    ----------------------------------------
+    Total                      7.612ns (5.519ns logic, 2.093ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Instancia_11/clkDiv'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              6.698ns (Levels of Logic = 3)
+  Source:            Instancia_11/state_FSM_FFd2 (FF)
+  Destination:       halt (PAD)
+  Source Clock:      Instancia_11/clkDiv rising
+
+  Data Path: Instancia_11/state_FSM_FFd2 to halt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.514   1.074  Instancia_11/state_FSM_FFd2 (Instancia_11/state_FSM_FFd2)
+     LUT4:I0->O            1   0.612   0.360  Instancia_11/halt44_SW0 (N156)
+     LUT4:I3->O            1   0.612   0.357  Instancia_11/halt44 (halt_OBUF)
+     OBUF:I->O                 3.169          halt_OBUF (halt)
+    ----------------------------------------
+    Total                      6.698ns (4.907ns logic, 1.791ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.22 secs
+ 
+--> 
+
+Total memory usage is 4584476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

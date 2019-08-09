@@ -1,0 +1,321 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml ULA.twx ULA.ncd -o ULA.twr ULA.pcf
+
+Design file:              ULA.ncd
+Physical constraint file: ULA.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+X<0>           |M<0>           |   10.880|
+X<0>           |M<1>           |   10.761|
+X<0>           |M<2>           |   11.063|
+X<0>           |M<3>           |   10.880|
+X<0>           |M<4>           |   11.419|
+X<0>           |M<5>           |   11.017|
+X<0>           |M<6>           |   11.409|
+X<0>           |M<7>           |   11.880|
+X<0>           |NZ<0>          |   13.479|
+X<0>           |NZ<1>          |   12.625|
+X<0>           |saidaULA<0>    |   11.986|
+X<0>           |saidaULA<1>    |   11.443|
+X<0>           |saidaULA<2>    |   11.183|
+X<0>           |saidaULA<3>    |   11.003|
+X<0>           |saidaULA<4>    |   11.527|
+X<0>           |saidaULA<5>    |   11.199|
+X<0>           |saidaULA<6>    |   11.777|
+X<0>           |saidaULA<7>    |   12.654|
+X<1>           |M<0>           |   11.140|
+X<1>           |M<1>           |   11.021|
+X<1>           |M<2>           |   11.323|
+X<1>           |M<3>           |   11.140|
+X<1>           |M<4>           |   11.679|
+X<1>           |M<5>           |   11.277|
+X<1>           |M<6>           |   11.669|
+X<1>           |M<7>           |   12.140|
+X<1>           |NZ<0>          |   13.739|
+X<1>           |NZ<1>          |   12.885|
+X<1>           |saidaULA<1>    |   11.703|
+X<1>           |saidaULA<2>    |   11.443|
+X<1>           |saidaULA<3>    |   11.263|
+X<1>           |saidaULA<4>    |   11.787|
+X<1>           |saidaULA<5>    |   11.459|
+X<1>           |saidaULA<6>    |   12.037|
+X<1>           |saidaULA<7>    |   12.914|
+X<2>           |M<0>           |   10.753|
+X<2>           |M<1>           |   10.634|
+X<2>           |M<2>           |   10.936|
+X<2>           |M<3>           |   10.753|
+X<2>           |M<4>           |   11.292|
+X<2>           |M<5>           |   10.890|
+X<2>           |M<6>           |   11.282|
+X<2>           |M<7>           |   11.753|
+X<2>           |NZ<0>          |   13.216|
+X<2>           |NZ<1>          |   12.498|
+X<2>           |saidaULA<2>    |   11.056|
+X<2>           |saidaULA<3>    |   10.876|
+X<2>           |saidaULA<4>    |   11.400|
+X<2>           |saidaULA<5>    |   11.072|
+X<2>           |saidaULA<6>    |   11.650|
+X<2>           |saidaULA<7>    |   12.527|
+X<3>           |M<0>           |   10.566|
+X<3>           |M<1>           |   10.447|
+X<3>           |M<2>           |   10.749|
+X<3>           |M<3>           |   10.566|
+X<3>           |M<4>           |   11.105|
+X<3>           |M<5>           |   10.703|
+X<3>           |M<6>           |   11.095|
+X<3>           |M<7>           |   11.566|
+X<3>           |NZ<0>          |   13.029|
+X<3>           |NZ<1>          |   12.311|
+X<3>           |saidaULA<3>    |   10.689|
+X<3>           |saidaULA<4>    |   11.213|
+X<3>           |saidaULA<5>    |   10.885|
+X<3>           |saidaULA<6>    |   11.463|
+X<3>           |saidaULA<7>    |   12.340|
+X<4>           |M<0>           |    9.988|
+X<4>           |M<1>           |    9.869|
+X<4>           |M<2>           |   10.171|
+X<4>           |M<3>           |    9.988|
+X<4>           |M<4>           |   10.527|
+X<4>           |M<5>           |   10.125|
+X<4>           |M<6>           |   10.517|
+X<4>           |M<7>           |   10.988|
+X<4>           |NZ<0>          |   12.451|
+X<4>           |NZ<1>          |   11.733|
+X<4>           |saidaULA<4>    |   10.635|
+X<4>           |saidaULA<5>    |   10.307|
+X<4>           |saidaULA<6>    |   10.885|
+X<4>           |saidaULA<7>    |   11.762|
+X<5>           |M<0>           |   10.987|
+X<5>           |M<1>           |   10.868|
+X<5>           |M<2>           |   11.170|
+X<5>           |M<3>           |   10.987|
+X<5>           |M<4>           |   11.526|
+X<5>           |M<5>           |   11.124|
+X<5>           |M<6>           |   11.516|
+X<5>           |M<7>           |   11.987|
+X<5>           |NZ<0>          |   13.450|
+X<5>           |NZ<1>          |   12.732|
+X<5>           |saidaULA<5>    |   11.306|
+X<5>           |saidaULA<6>    |   11.884|
+X<5>           |saidaULA<7>    |   12.761|
+X<6>           |M<0>           |   10.257|
+X<6>           |M<1>           |   10.138|
+X<6>           |M<2>           |   10.440|
+X<6>           |M<3>           |   10.257|
+X<6>           |M<4>           |   10.796|
+X<6>           |M<5>           |   10.394|
+X<6>           |M<6>           |   10.786|
+X<6>           |M<7>           |   11.257|
+X<6>           |NZ<0>          |   12.720|
+X<6>           |NZ<1>          |   12.002|
+X<6>           |saidaULA<6>    |   11.154|
+X<6>           |saidaULA<7>    |   12.031|
+X<7>           |M<0>           |   10.326|
+X<7>           |M<1>           |   10.207|
+X<7>           |M<2>           |   10.509|
+X<7>           |M<3>           |   10.326|
+X<7>           |M<4>           |   10.865|
+X<7>           |M<5>           |   10.463|
+X<7>           |M<6>           |   10.855|
+X<7>           |M<7>           |   11.326|
+X<7>           |NZ<0>          |   12.789|
+X<7>           |NZ<1>          |   12.071|
+X<7>           |saidaULA<7>    |   12.100|
+Y<0>           |M<0>           |   10.529|
+Y<0>           |M<1>           |   10.410|
+Y<0>           |M<2>           |   10.712|
+Y<0>           |M<3>           |   10.529|
+Y<0>           |M<4>           |   11.068|
+Y<0>           |M<5>           |   10.666|
+Y<0>           |M<6>           |   11.058|
+Y<0>           |M<7>           |   11.529|
+Y<0>           |NZ<0>          |   13.128|
+Y<0>           |NZ<1>          |   12.274|
+Y<0>           |saidaULA<0>    |   11.635|
+Y<0>           |saidaULA<1>    |   11.092|
+Y<0>           |saidaULA<2>    |   10.832|
+Y<0>           |saidaULA<3>    |   10.913|
+Y<0>           |saidaULA<4>    |   11.176|
+Y<0>           |saidaULA<5>    |   10.907|
+Y<0>           |saidaULA<6>    |   11.426|
+Y<0>           |saidaULA<7>    |   12.303|
+Y<1>           |M<0>           |   10.262|
+Y<1>           |M<1>           |   10.143|
+Y<1>           |M<2>           |   10.445|
+Y<1>           |M<3>           |   10.262|
+Y<1>           |M<4>           |   10.801|
+Y<1>           |M<5>           |   10.399|
+Y<1>           |M<6>           |   10.791|
+Y<1>           |M<7>           |   11.262|
+Y<1>           |NZ<0>          |   12.861|
+Y<1>           |NZ<1>          |   12.007|
+Y<1>           |saidaULA<1>    |   10.825|
+Y<1>           |saidaULA<2>    |   10.565|
+Y<1>           |saidaULA<3>    |   10.385|
+Y<1>           |saidaULA<4>    |   10.909|
+Y<1>           |saidaULA<5>    |   10.581|
+Y<1>           |saidaULA<6>    |   11.159|
+Y<1>           |saidaULA<7>    |   12.036|
+Y<2>           |M<0>           |    9.901|
+Y<2>           |M<1>           |    9.782|
+Y<2>           |M<2>           |   10.084|
+Y<2>           |M<3>           |    9.901|
+Y<2>           |M<4>           |   10.440|
+Y<2>           |M<5>           |   10.038|
+Y<2>           |M<6>           |   10.430|
+Y<2>           |M<7>           |   10.901|
+Y<2>           |NZ<0>          |   12.364|
+Y<2>           |NZ<1>          |   11.646|
+Y<2>           |saidaULA<2>    |   10.204|
+Y<2>           |saidaULA<3>    |   10.024|
+Y<2>           |saidaULA<4>    |   10.548|
+Y<2>           |saidaULA<5>    |   10.220|
+Y<2>           |saidaULA<6>    |   10.798|
+Y<2>           |saidaULA<7>    |   11.675|
+Y<3>           |M<0>           |    9.939|
+Y<3>           |M<1>           |    9.820|
+Y<3>           |M<2>           |   10.122|
+Y<3>           |M<3>           |    9.939|
+Y<3>           |M<4>           |   10.478|
+Y<3>           |M<5>           |   10.076|
+Y<3>           |M<6>           |   10.468|
+Y<3>           |M<7>           |   10.939|
+Y<3>           |NZ<0>          |   12.402|
+Y<3>           |NZ<1>          |   11.684|
+Y<3>           |saidaULA<3>    |   10.062|
+Y<3>           |saidaULA<4>    |   10.586|
+Y<3>           |saidaULA<5>    |   10.258|
+Y<3>           |saidaULA<6>    |   10.836|
+Y<3>           |saidaULA<7>    |   11.713|
+Y<4>           |M<0>           |   10.210|
+Y<4>           |M<1>           |   10.091|
+Y<4>           |M<2>           |   10.393|
+Y<4>           |M<3>           |   10.210|
+Y<4>           |M<4>           |   10.749|
+Y<4>           |M<5>           |   10.347|
+Y<4>           |M<6>           |   10.739|
+Y<4>           |M<7>           |   11.210|
+Y<4>           |NZ<0>          |   12.673|
+Y<4>           |NZ<1>          |   11.955|
+Y<4>           |saidaULA<4>    |   10.857|
+Y<4>           |saidaULA<5>    |   10.529|
+Y<4>           |saidaULA<6>    |   11.107|
+Y<4>           |saidaULA<7>    |   11.984|
+Y<5>           |M<0>           |   10.199|
+Y<5>           |M<1>           |   10.080|
+Y<5>           |M<2>           |   10.382|
+Y<5>           |M<3>           |   10.199|
+Y<5>           |M<4>           |   10.738|
+Y<5>           |M<5>           |   10.336|
+Y<5>           |M<6>           |   10.728|
+Y<5>           |M<7>           |   11.199|
+Y<5>           |NZ<0>          |   12.662|
+Y<5>           |NZ<1>          |   11.944|
+Y<5>           |saidaULA<5>    |   10.518|
+Y<5>           |saidaULA<6>    |   11.096|
+Y<5>           |saidaULA<7>    |   11.973|
+Y<6>           |M<0>           |   10.771|
+Y<6>           |M<1>           |   10.652|
+Y<6>           |M<2>           |   10.954|
+Y<6>           |M<3>           |   10.771|
+Y<6>           |M<4>           |   11.310|
+Y<6>           |M<5>           |   10.908|
+Y<6>           |M<6>           |   11.300|
+Y<6>           |M<7>           |   11.771|
+Y<6>           |NZ<0>          |   13.234|
+Y<6>           |NZ<1>          |   12.516|
+Y<6>           |saidaULA<6>    |   11.668|
+Y<6>           |saidaULA<7>    |   12.545|
+Y<7>           |M<0>           |   10.477|
+Y<7>           |M<1>           |   10.358|
+Y<7>           |M<2>           |   10.660|
+Y<7>           |M<3>           |   10.477|
+Y<7>           |M<4>           |   11.016|
+Y<7>           |M<5>           |   10.614|
+Y<7>           |M<6>           |   11.006|
+Y<7>           |M<7>           |   11.477|
+Y<7>           |NZ<0>          |   12.940|
+Y<7>           |NZ<1>          |   12.222|
+Y<7>           |saidaULA<7>    |   12.251|
+sel<0>         |NZ<0>          |   13.554|
+sel<0>         |NZ<1>          |   11.259|
+sel<0>         |saidaULA<0>    |   10.640|
+sel<0>         |saidaULA<1>    |   10.492|
+sel<0>         |saidaULA<2>    |   10.020|
+sel<0>         |saidaULA<3>    |   11.814|
+sel<0>         |saidaULA<4>    |   10.866|
+sel<0>         |saidaULA<5>    |   11.808|
+sel<0>         |saidaULA<6>    |   10.489|
+sel<0>         |saidaULA<7>    |   11.288|
+sel<1>         |NZ<0>          |   13.718|
+sel<1>         |NZ<1>          |   11.423|
+sel<1>         |saidaULA<0>    |   10.804|
+sel<1>         |saidaULA<1>    |   10.656|
+sel<1>         |saidaULA<2>    |   10.184|
+sel<1>         |saidaULA<3>    |   11.978|
+sel<1>         |saidaULA<4>    |   11.030|
+sel<1>         |saidaULA<5>    |   11.972|
+sel<1>         |saidaULA<6>    |   10.653|
+sel<1>         |saidaULA<7>    |   11.452|
+sel<2>         |NZ<0>          |   14.216|
+sel<2>         |NZ<1>          |   11.921|
+sel<2>         |saidaULA<0>    |   11.302|
+sel<2>         |saidaULA<1>    |   11.154|
+sel<2>         |saidaULA<2>    |   10.682|
+sel<2>         |saidaULA<3>    |   12.476|
+sel<2>         |saidaULA<4>    |   11.528|
+sel<2>         |saidaULA<5>    |   12.470|
+sel<2>         |saidaULA<6>    |   11.151|
+sel<2>         |saidaULA<7>    |   11.950|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 11 16:49:28 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4504 MB
+
+
+

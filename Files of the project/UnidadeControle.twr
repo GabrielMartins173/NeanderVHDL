@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml UnidadeControle.twx UnidadeControle.ncd -o
+UnidadeControle.twr UnidadeControle.pcf
+
+Design file:              UnidadeControle.ncd
+Physical constraint file: UnidadeControle.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Decoder<0>  |    4.358(R)|   -0.180(R)|clk_BUFGP         |   0.000|
+Decoder<1>  |    4.180(R)|   -0.125(R)|clk_BUFGP         |   0.000|
+Decoder<2>  |    2.770(R)|   -0.021(R)|clk_BUFGP         |   0.000|
+Decoder<3>  |    2.817(R)|    0.012(R)|clk_BUFGP         |   0.000|
+N           |    3.721(R)|   -0.702(R)|clk_BUFGP         |   0.000|
+Z           |    3.528(R)|   -0.548(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+cargaAC      |    9.830(R)|clk_BUFGP         |   0.000|
+cargaNZ      |    9.830(R)|clk_BUFGP         |   0.000|
+cargaPC      |    9.675(R)|clk_BUFGP         |   0.000|
+cargaRDM     |    9.132(R)|clk_BUFGP         |   0.000|
+cargaREM     |   10.637(R)|clk_BUFGP         |   0.000|
+cargaRI      |    8.200(R)|clk_BUFGP         |   0.000|
+halt         |    8.828(R)|clk_BUFGP         |   0.000|
+incPC        |   10.323(R)|clk_BUFGP         |   0.000|
+read_write<0>|    8.977(R)|clk_BUFGP         |   0.000|
+sel<0>       |    8.417(R)|clk_BUFGP         |   0.000|
+sel<1>       |    8.884(R)|clk_BUFGP         |   0.000|
+selRDM       |    9.386(R)|clk_BUFGP         |   0.000|
+selULA<0>    |    9.246(R)|clk_BUFGP         |   0.000|
+selULA<1>    |    9.196(R)|clk_BUFGP         |   0.000|
+selULA<2>    |    9.883(R)|clk_BUFGP         |   0.000|
+-------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.698|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Decoder<0>     |cargaAC        |    8.114|
+Decoder<0>     |cargaNZ        |    8.114|
+Decoder<0>     |cargaPC        |    8.083|
+Decoder<0>     |cargaRDM       |    7.772|
+Decoder<0>     |cargaREM       |    9.784|
+Decoder<0>     |halt           |    6.967|
+Decoder<0>     |incPC          |    8.876|
+Decoder<0>     |read_write<0>  |    8.199|
+Decoder<0>     |sel<0>         |    7.170|
+Decoder<0>     |sel<1>         |    7.518|
+Decoder<0>     |selRDM         |    8.020|
+Decoder<0>     |selULA<0>      |    7.709|
+Decoder<0>     |selULA<1>      |    7.516|
+Decoder<0>     |selULA<2>      |    6.030|
+Decoder<1>     |cargaAC        |    9.544|
+Decoder<1>     |cargaNZ        |    9.544|
+Decoder<1>     |cargaPC        |    7.905|
+Decoder<1>     |cargaRDM       |    8.833|
+Decoder<1>     |cargaREM       |    9.871|
+Decoder<1>     |halt           |    7.441|
+Decoder<1>     |incPC          |    8.930|
+Decoder<1>     |read_write<0>  |    8.501|
+Decoder<1>     |sel<0>         |    7.102|
+Decoder<1>     |sel<1>         |    7.394|
+Decoder<1>     |selRDM         |    7.896|
+Decoder<1>     |selULA<0>      |    9.164|
+Decoder<1>     |selULA<1>      |    8.971|
+Decoder<1>     |selULA<2>      |    6.633|
+Decoder<2>     |cargaAC        |    8.550|
+Decoder<2>     |cargaNZ        |    8.550|
+Decoder<2>     |cargaPC        |    7.999|
+Decoder<2>     |cargaRDM       |    8.631|
+Decoder<2>     |cargaREM       |    9.461|
+Decoder<2>     |halt           |    8.124|
+Decoder<2>     |incPC          |    9.077|
+Decoder<2>     |read_write<0>  |    9.058|
+Decoder<2>     |sel<0>         |    8.034|
+Decoder<2>     |sel<1>         |    8.377|
+Decoder<2>     |selRDM         |    8.879|
+Decoder<2>     |selULA<0>      |    8.097|
+Decoder<2>     |selULA<1>      |    7.904|
+Decoder<2>     |selULA<2>      |    6.348|
+Decoder<3>     |cargaAC        |    9.353|
+Decoder<3>     |cargaNZ        |    9.353|
+Decoder<3>     |cargaPC        |    7.756|
+Decoder<3>     |cargaRDM       |    8.631|
+Decoder<3>     |cargaREM       |    9.709|
+Decoder<3>     |halt           |    7.481|
+Decoder<3>     |incPC          |    8.362|
+Decoder<3>     |read_write<0>  |    8.511|
+Decoder<3>     |sel<0>         |    7.516|
+Decoder<3>     |sel<1>         |    7.830|
+Decoder<3>     |selRDM         |    8.332|
+Decoder<3>     |selULA<0>      |    8.973|
+Decoder<3>     |selULA<1>      |    8.780|
+Decoder<3>     |selULA<2>      |    6.877|
+N              |cargaPC        |    7.446|
+N              |cargaREM       |    9.147|
+N              |incPC          |    8.343|
+Z              |cargaPC        |    7.253|
+Z              |cargaREM       |    8.954|
+Z              |incPC          |    8.211|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Oct 12 11:07:17 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4487 MB
+
+
+

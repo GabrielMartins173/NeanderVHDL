@@ -1,0 +1,2 @@
+verilog work "netgen/par/Neander_timesim.v"
+vhdl work "Tb_Neander.vhd"

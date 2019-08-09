@@ -1,0 +1,7 @@
+[Inputs]
+seletorMux
+=entrada1MUX[7:0]=
+=entrada2MUX[7:0]=
+[Outputs]
+=saidaMux[7:0]=
+[BiDir]

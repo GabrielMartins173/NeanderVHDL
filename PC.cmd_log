@@ -1,0 +1,24 @@
+vhdtdtfi -prj Neander_Gabriel_Martins -o "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.tfi" -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work PC.vhd 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "PC.ngc" PC.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o PC_map.ncd PC.ngd PC.pcf 
+par -w -intstyle ise -ol high -t 1 PC_map.ncd PC.ncd PC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PC.twx PC.ncd -o PC.twr PC.pcf 
+vhdtdtfi -prj Neander_Gabriel_Martins -o "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.tfi" -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work PC.vhd 
+vhdtdtfi -lib work PC.vhd -prj Neander_Gabriel_Martins -o PC.spl -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PC.spl {C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.sym} 
+vhdtdtfi -prj Neander_Gabriel_Martins -o "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.tfi" -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work PC.vhd 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "PC.ngc" PC.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o PC_map.ncd PC.ngd PC.pcf 
+par -w -intstyle ise -ol high -t 1 PC_map.ncd PC.ncd PC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PC.twx PC.ncd -o PC.twr PC.pcf 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+xst -intstyle ise -ifn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.xst" -ofn "C:/Users/gabri/Dropbox/SD/Arquivos login INF/Trabalho 2 SD - Gabriel Martins dos Santos/Neander_Gabriel_Martins/PC.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s100e-cp132-5 "PC.ngc" PC.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o PC_map.ncd PC.ngd PC.pcf 
+par -w -intstyle ise -ol high -t 1 PC_map.ncd PC.ncd PC.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml PC.twx PC.ncd -o PC.twr PC.pcf 

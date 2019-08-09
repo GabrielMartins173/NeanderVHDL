@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Neander_Gabriel_Martins/Tb_Neander_isim_par.exe" -prj "C:/Neander_Gabriel_Martins/Tb_Neander_par.prj" "work.Tb_Neander" "work.glbl" 

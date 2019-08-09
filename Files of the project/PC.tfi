@@ -1,0 +1,14 @@
+
+
+
+// Instantiate the module
+PC instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .cargaPC(cargaPC), 
+    .incrementaPC(incrementaPC), 
+    .entradaPC(entradaPC), 
+    .saidaPC(saidaPC)
+    );
+
+

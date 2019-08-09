@@ -1,0 +1,9 @@
+[Inputs]
+clk
+reset
+cargaPC
+incrementaPC
+=entradaPC[7:0]=
+[Outputs]
+=saidaPC[7:0]=
+[BiDir]
